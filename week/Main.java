@@ -1,22 +1,22 @@
-package week11;
+package week;
 import java.util.*;
 public class Main {
-    public static void main(String[] args) {
-        String haystack = "hello", needle = "ll";
-        System.out.println(strStr(haystack, needle));
-    }
+    // public static void main(String[] args) {
+    //     String haystack = "heello", needle = "ee";
+    //     System.out.println(strStr(haystack, needle));
+    // }
 
-    public static int strStr(String haystack, String needle) {
-        if (needle.isEmpty()) return 0;
-        int n = haystack.length(), m = needle.length();
-        for (int i = 0; i <= n - m; i++) {
-            if (haystack.substring(i, i + m).equals(needle)) {
-                return i;
-            }
-        }
-        return -1;
-    }
-    //----------------------------------------------reverse
+    // public static int strStr(String haystack, String needle) {
+    //     if (needle.isEmpty()) return 0;
+    //     int n = haystack.length(), m = needle.length();
+    //     for (int i = 0; i <= n - m; i++) {
+    //         if (haystack.substring(i, i + m).equals(needle)) {
+    //             return i;
+    //         }
+    //     }
+    //     return -1;
+    // }
+    // ----------------------------------------------reverse
     // public static void main(String[] args) {
     //     int x = 123;
     //     System.out.println(reverse(x));
@@ -33,9 +33,9 @@ public class Main {
     //     }
     //     return result;
     // }
-    // ----------------------------------------------------------palindrome
+ // ----------------------------------------------------------palindrome
     // public static void main(String[] args) {
-    //     int x = 121;
+    //     int x = 1210;
     //     System.out.println(isPalindrome(x));
     // }
 
@@ -49,7 +49,6 @@ public class Main {
     //     return x == reversed || x == reversed / 10;
     // }
     //-----------------------------------------------------merge
-    // import java.util.Arrays;
 
     // public static void main(String[] args) {
     //     int[] nums1 = {1, 2, 3, 0, 0, 0};
@@ -85,9 +84,9 @@ public class Main {
     //         nums[index++] = 0;
     //     }
     // }
-    //--------------------------removeduplicates
+    // //--------------------------removeduplicates
     // public static void main(String[] args) {
-    //     int[] nums = {1, 1, 2};
+    //     int[] nums = {1, 1, 2,2,3,4,4};
     //     int length = removeDuplicates(nums);
     //     System.out.println("Length: " + length);
     //     for (int i = 0; i < length; i++) {
@@ -105,7 +104,7 @@ public class Main {
     //     }
     //     return index;
     // }
-    // day 55--------------------------------------------------------
+    // day-------------------------------------------------------
     // public static void main(String[] args) {
     //     int[] nums = {1, 1, 1};
     //     int k = 2;
